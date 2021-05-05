@@ -1,0 +1,49 @@
+{
+  "name": "mralirezaeb/hashids-bundle",
+  "type": "symfony-bundle",
+  "description": "Integrates hashids/hashids in a Symfony project",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alireza Ebrahimzade",
+      "email": "mr.alireza.eb@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Roukmoute\\HashidsBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "spec\\Roukmoute\\HashidsBundle\\": "spec/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "hashids/hashids": "^3.0",
+    "sensio/framework-extra-bundle": "^5.1",
+    "symfony/http-kernel": "^4.0 || ^5.0"
+  },
+  "require-dev": {
+    "bossa/phpspec2-expect": "^3.0",
+    "phpspec/phpspec": "^4.3",
+    "roave/security-advisories": "dev-master",
+    "twig/twig": "^2.7"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.1-dev"
+    }
+  },
+  "suggest": {
+    "twig/twig": "Allows to use hashids in Twig template engine"
+  },
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  }
+}
